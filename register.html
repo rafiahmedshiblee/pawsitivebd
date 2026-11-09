@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - PawsitiveBD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐾 PawsitiveBD</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cases.html">Rescue Cases</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="report.html">Report Animal</a></li>
+        <li><a href="login.html" class="btn-login">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Register Form Container -->
+  <div class="container" style="max-width: 450px;">
+    <h2 class="section-title">Create an Account</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 2rem;">Join PawsitiveBD as a citizen or a volunteer rescuer.</p>
+    
+    <form style="background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      
+      <!-- Full Name -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="fullname" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Full Name</label>
+        <input type="text" id="fullname" placeholder="Rafi Ahmed" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;" required>
+      </div>
+
+      <!-- Email -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Email Address</label>
+        <input type="email" id="email" placeholder="name@example.com" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;" required>
+      </div>
+
+      <!-- Password -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="password" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Password</label>
+        <input type="password" id="password" placeholder="********" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;" required>
+      </div>
+
+      <!-- Role Selection -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="role" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Select Role</label>
+        <select id="role" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+          <option value="citizen">Citizen (Report cases & adopt)</option>
+          <option value="rescuer">Rescuer / Shelter (Manage & update cases)</option>
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-size: 1rem; margin-bottom: 1rem;">Register</button>
+      
+      <p style="text-align: center; font-size: 0.9rem; color: #666;">
+        Already have an account? <a href="login.html" style="color: var(--primary); text-decoration: none; font-weight: 600;">Log in here</a>
+      </p>
+
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 PawsitiveBD. Built for community animal rescue in Bangladesh.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawsitiveBD</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawsitiveBD - Street Animal Care & Adoption</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to PawsitiveBD</h1>
-    <p>Helping street animals across Bangladesh.</p>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐾 PawsitiveBD</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="cases.html">Rescue Cases</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="report.html">Report Animal</a></li>
+        <li><a href="login.html" class="btn-login">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Give Street Animals a Second Chance</h1>
+    <p>Report injured strays, track rescue updates, and find your next furry companion in Bangladesh.</p>
+    <a href="report.html" class="btn-primary">Report an Injured Animal</a>
+  </section>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    
+    <!-- About Section -->
+    <section style="text-align: center; margin-bottom: 3rem;">
+      <h2 class="section-title">About PawsitiveBD</h2>
+      <p style="max-width: 700px; margin: 0 auto; color: #666;">Thousands of stray cats and dogs in Bangladesh suffer from injuries and starvation. PawsitiveBD acts as a centralized community platform connecting concerned citizens with active volunteer rescuers to save lives.</p>
+    </section>
+
+    <!-- Recent Rescue Cases -->
+    <section>
+      <h2 class="section-title">Recent Rescue Cases</h2>
+      <div class="grid">
+        <div class="card">
+          <div style="height:200px; background:#ddd; display:flex; align-items:center; justify-content:center; color:#777;">[Rescue Photo]</div>
+          <div class="card-content">
+            <h3>Injured Stray Dog - Uttara</h3>
+            <p><strong>Status:</strong> Reported 🔴</p>
+            <p>Found near Sector 7 with a wounded leg requiring immediate medical attention.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div style="height:200px; background:#ddd; display:flex; align-items:center; justify-content:center; color:#777;">[Rescue Photo]</div>
+          <div class="card-content">
+            <h3>Kitten with Eye Infection - Dhanmondi</h3>
+            <p><strong>Status:</strong> Under Treatment 🟡</p>
+            <p>Rescued by local volunteers and currently admitted at the local vet clinic.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div style="height:200px; background:#ddd; display:flex; align-items:center; justify-content:center; color:#777;">[Rescue Photo]</div>
+          <div class="card-content">
+            <h3>Abandoned Puppy - Bashundhara</h3>
+            <p><strong>Status:</strong> Rescued 🟢</p>
+            <p>Safe and resting at a foster home waiting for adoption clearance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Adoptable Animals -->
+    <section>
+      <h2 class="section-title">Featured Adoptable Animals</h2>
+      <div class="grid">
+        <div class="card">
+          <div style="height:200px; background:#e0e0e0; display:flex; align-items:center; justify-content:center; color:#777;">[Pet Photo]</div>
+          <div class="card-content">
+            <h3>Simba (Local Cat)</h3>
+            <p>Age: 8 Months | Vaccinated: Yes ✅</p>
+            <a href="adopt.html" class="btn-primary" style="margin-top: 1rem; display:inline-block; padding: 0.5rem 1rem; font-size: 0.9rem;">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <div style="height:200px; background:#e0e0e0; display:flex; align-items:center; justify-content:center; color:#777;">[Pet Photo]</div>
+          <div class="card-content">
+            <h3>Rocky (Deshi Dog)</h3>
+            <p>Age: 1 Year | Vaccinated: Yes ✅</p>
+            <a href="adopt.html" class="btn-primary" style="margin-top: 1rem; display:inline-block; padding: 0.5rem 1rem; font-size: 0.9rem;">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 PawsitiveBD. Built for community animal rescue in Bangladesh.</p>
+  </footer>
+
 </body>
 </html>

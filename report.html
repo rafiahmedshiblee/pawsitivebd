@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Injured Animal - PawsitiveBD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🐾 PawsitiveBD</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cases.html">Rescue Cases</a></li>
+        <li><a href="adopt.html">Adopt</a></li>
+        <li><a href="report.html" class="active">Report Animal</a></li>
+        <li><a href="login.html" class="btn-login">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Report Form Container -->
+  <div class="container" style="max-width: 600px;">
+    <h2 class="section-title">Report an Injured or Sick Animal</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 2rem;">Fill out the details below so local volunteer rescuers can locate and assist the animal quickly.</p>
+    
+    <form style="background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      
+      <!-- Animal Species -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="species" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Animal Species</label>
+        <select id="species" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+          <option value="dog">Dog / Puppy</option>
+          <option value="cat">Cat / Kitten</option>
+          <option value="other">Other Animal</option>
+        </select>
+      </div>
+
+      <!-- Severity Level -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="severity" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Severity Level</label>
+        <select id="severity" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+          <option value="critical">Critical (Severe injury / Bleeding / Unable to stand) 🔴</option>
+          <option value="sick">Sick (Visible illness / Infection / Weak) 🟡</option>
+          <option value="mild">Mild (Needs food / Minor checkup) 🟢</option>
+        </select>
+      </div>
+
+      <!-- Location -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="location" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Location / Landmark</label>
+        <input type="text" id="location" placeholder="e.g., Road 11, Uttara near Sector 3 park" style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;" required>
+      </div>
+
+      <!-- Photo Upload -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="photo" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Upload Animal Photo</label>
+        <input type="file" id="photo" accept="image/*" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+
+      <!-- Description -->
+      <div style="margin-bottom: 1.5rem;">
+        <label for="description" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Detailed Description</label>
+        <textarea id="description" rows="4" placeholder="Describe the animal's condition, exact spot, or behavior..." style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-size: 1rem;">Submit Rescue Report</button>
+      
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 PawsitiveBD. Built for community animal rescue in Bangladesh.</p>
+  </footer>
+
+</body>
+</html>
